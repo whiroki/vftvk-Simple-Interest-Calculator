@@ -22,14 +22,30 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-	</select>
+    </select>
+    <br/>
         <button onclick="compute()">Compute Interest</button>
         <span id="result"></span>
-<br/><br/>
+<br/>
         <footer>&#169; Everyone can get rich...</footer>
-
-
             </div>
-    </body>
+
+        <script>
+        function myFunction() {
+        // Get the value of the input field with id="numb"
+        let x = document.getElementById("principal").value;
+        // If x is Not a Number or less than one or greater than 10
+        let text;
+        if (isNaN(x) || x < 1 ) {
+            text = "Input not valid";
+        } else {
+            text = "Input OK";
+        }
+        document.getElementById("result").innerHTML = text;
+        }
+        </script>
+
+
+        </body>
 </html>
 
